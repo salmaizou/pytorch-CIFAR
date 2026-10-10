@@ -1,0 +1,7 @@
+venv/
+data/
+models/*.pth
+__pycache__/
+*.py[cod]
+.env
+.kaggle/
