@@ -15,6 +15,8 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 class CIFAR10ImageDataset(Dataset[tuple[torch.Tensor, int]]):
     def __init__(self, images_dir: Path, class_to_idx: dict[str, int] | None = None) -> None:
         if not images_dir.is_dir():
+   
+   
             raise FileNotFoundError(f"Le dossier d'images est introuvable : {images_dir}")
 
         if class_to_idx is None:
